@@ -53,10 +53,10 @@ def train_Pnet(training_data, base_lr, loss_weight,
 
 if __name__ == '__main__':
 
-    load_filename = '/content/MTCNN-Tensorflow/pretrained/initial_weight_pnet.npy'
-    save_filename = '/content/MTCNN-Tensorflow/save_model/new_saver/pnet/pnet'
-    training_data = ['/content/MTCNN-Tensorflow/pnet_data_for_cls.tfrecords',
-                     '/content/MTCNN-Tensorflow/pnet_data_for_bbx.tfrecords']
+    load_filename = '/content/TA-JK22022/pretrained/initial_weight_pnet.npy'
+    save_filename = '/content/TA-JK22022/save_model/new_saver/pnet/pnet'
+    training_data = ['/content/TA-JK22022/pnet_data_for_cls.tfrecords',
+                     '/content/TA-JK22022/pnet_data_for_bbx.tfrecords']
     device = '/gpu:0'
     train_Pnet(training_data=training_data,
                base_lr=0.0001,
