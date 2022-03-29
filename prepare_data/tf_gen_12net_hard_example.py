@@ -41,8 +41,8 @@ def main(args):
 
     image_size = 24
     save_dir = str(image_size)
-    anno_file = '/content/MTCNN-Tensorflow/prepare_data/wider_face_train.txt'
-    im_dir = '/content/MTCNN-Tensorflow/prepare_data/WIDER_train/images/'
+    anno_file = '/content/TA-JK22022/prepare_data/wider_face_train.txt'
+    im_dir = '/content/TA-JK22022/prepare_data/WIDER_train/images/'
 
     neg_save_dir = save_dir+'/negative'
     pos_save_dir = save_dir+'/positive'
@@ -168,7 +168,7 @@ def parse_arguments(argv):
 
     parser.add_argument('--pnet_model', type=str,
                         help='The path of pnet model to generate hard example',
-                        default='/content/MTCNN-Tensorflow/save_model/sepatate/pnet/pnet-3000000')
+                        default='/content/TA-JK22022/save_model/sepatate/pnet/pnet-3000000')
 
     return parser.parse_args(argv)
 
