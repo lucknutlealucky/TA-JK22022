@@ -38,8 +38,8 @@ sys.path.append('../')
 def main(args):
 
     net = args.input_size
-    anno_file = '/content/MTCNN-Tensorflow/prepare_data/wider_face_train.txt'
-    im_dir = '/content/MTCNN-Tensorflow/prepare_data/WIDER_train/images'
+    anno_file = '/content/TA-JK22022/prepare_data/wider_face_train.txt'
+    im_dir = '/content/TA-JK22022/prepare_data/WIDER_train/images'
 
     save_dir = 'native_' + str(net)
     pos_save_dir = save_dir + '/positive'
