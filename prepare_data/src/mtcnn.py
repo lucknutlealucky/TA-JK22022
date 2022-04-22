@@ -636,6 +636,8 @@ def train_net(Net, training_data, base_lr, loss_weight,
                     print(
                         'Step %d for pts: loss = %.5f' %
                         (step_value[2], agg_pts))
+                    with open("./"+str(Net.__name__)+".txt", a) as file:
+                        file.write(str(step_value[0])+""+str(agg_cls)+" "+str(step_value[1])+" "+str(agg_bbx)+"\n")
                     loss_agg_cls = [0]
                     loss_agg_bbx = [0]
                     loss_agg_pts = [0]
